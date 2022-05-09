@@ -17,13 +17,28 @@ class StrCompare
      *
      * @return bool
      */
-    public function isStringIsEquals(...$strings)
+    public static function isStringIsEquals(...$strings): bool
     {
-        $prevString = [];
+        $results = [];
         foreach ($strings as $string) {
-            $prevString[$string] = $string;
+            $results[$string] = $string;
         }
 
-        return count($prevString) === 1;
+        return count($results) === 1;
+    }
+
+    /**
+     * @param ...$strings
+     *
+     * @return bool
+     */
+    public static function compareCleanString(...$strings): bool
+    {
+        $results = [];
+        foreach ($strings as $string) {
+            $results[StrCleaner::cleanString($string)] = $string;
+        }
+
+        return count($results) === 1;
     }
 }
