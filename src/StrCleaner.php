@@ -33,13 +33,15 @@ class StrCleaner
             '/[ÓÒÔÕÖ]/u' => 'O',
             '/[úùûü]/u' => 'u',
             '/[ÚÙÛÜ]/u' => 'U',
+            '/[ŶŸ]/u' => 'Y',
+            '/[ŷÿ]/u' => 'y',
             '/ç/' => 'c',
             '/Ç/' => 'C',
             '/ñ/' => 'n',
             '/Ñ/' => 'N',
             '/–/' => '-', // UTF-8 hyphen to "normal" hyphen
-            '/[’‘‹›‚]/u' => ' ', // Literally a single quote
-            '/[“”«»„]/u' => ' ', // Double quote
+            "/[’‘'‹›‚]/u" => '', // Literally a single quote
+            '/["“”«»„]/u' => '', // Double quote
             '/ /' => ' ', // non-breaking space (equiv. to 0x160)
         ];
 

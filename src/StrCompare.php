@@ -28,11 +28,13 @@ class StrCompare
     }
 
     /**
+     * This will compare a text with specials char for example  têxt will be equals to text
+     *
      * @param ...$strings
      *
      * @return bool
      */
-    public static function compareCleanString(...$strings): bool
+    public static function compareCleanedString(...$strings): bool
     {
         $results = [];
         foreach ($strings as $string) {

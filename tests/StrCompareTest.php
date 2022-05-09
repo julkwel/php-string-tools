@@ -16,8 +16,7 @@ class StrCompareTest extends TestCase
      */
     public function testFailingComparison()
     {
-        $strCompare = new StrCompare();
-        $this->assertFalse($strCompare->isStringIsEquals("z", "x"));
+        $this->assertFalse(StrCompare::isStringIsEquals("z", "x"));
     }
 
     /**
@@ -25,7 +24,14 @@ class StrCompareTest extends TestCase
      */
     public function testSuccessComparison()
     {
-        $strCompare = new StrCompare();
-        $this->assertTrue($strCompare->isStringIsEquals("test", "test"));
+        $this->assertTrue(StrCompare::isStringIsEquals("test", "test"));
+    }
+
+    /**
+     * testing special comparison
+     */
+    public function testWithSpecialChar()
+    {
+        $this->assertTrue(StrCompare::compareCleanedString("SPÊCÏAL CHAR'S", "special chars"));
     }
 }
