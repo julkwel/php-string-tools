@@ -1,6 +1,12 @@
 {
   "name": "julkwel/stringtools",
-  "description": "String tools for php and testing new package",
+  "description": "String tools for php",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Julien RAJERISON"
+    }
+  ],
   "autoload": {
     "psr-4": {
       "Julkwel\\StringTools\\": "src/"
