@@ -7,9 +7,8 @@ String tools for php, special chars cleaner and string comparison ... [WIP]
 
 ## Usage :
 
-- String special chars cleaner
+**- String special chars cleaner**
 
-Usage :
 ```
 $textToClean = "ÉÉÊÊÎÎÎî ëŷ we are with spécïal charactêrs and w'ill clean";
 \Julkwel\StringTools\StrCleaner::cleanString($textToClean)
@@ -17,7 +16,7 @@ $textToClean = "ÉÉÊÊÎÎÎî ëŷ we are with spécïal charactêrs and w'il
 Output: "eeeeiiii ey we are with special characters and will clean"
 ```
 
-- String Comparison :
+**- String Comparison :**
 
 1. Simple use : 
 ```
