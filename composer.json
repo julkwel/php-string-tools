@@ -1,0 +1,14 @@
+{
+  "name": "julkwel/stringtools",
+  "description": "String tools for php and testing new package",
+  "autoload": {
+    "psr-4": {
+      "Julkwel\\StringTools\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  }
+}

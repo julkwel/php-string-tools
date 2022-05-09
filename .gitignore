@@ -1,0 +1,5 @@
+/vendor/
+
+###> intellij/idea ###
+/.php_cs.cache
+/.idea
